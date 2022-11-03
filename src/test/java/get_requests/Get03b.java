@@ -53,5 +53,8 @@ public class Get03b extends ReqresBaseUrl {
                         "data.first_name",equalTo("Janet"),
                         "data.last_name",equalTo("Weaver"),
                         "support.text",equalTo("To keep ReqRes free, contributions towards server costs are appreciated!"));
+
+        //SoftAssert'te herhangi biri hatalıysa onları konsolda veriri digerlerini de kontrol eder
+        //HardAssert'te herhangi biri hatalıysa onları kontrol etmez direkt hata verir
     }
 }

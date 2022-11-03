@@ -42,7 +42,9 @@ public class Get06b extends ReqresBaseUrl {
         assertEquals(200,response.getStatusCode());
 
         //2)Print all pantone_values
-        System.out.println(jsonPath.getList("data.pantone_value")); //.get(0) desem sonuna, 0. index olanı verir
+        System.out.println(jsonPath.getList("data.pantone_value"));
+        //.get(0) desem sonuna, 0. index olanı verir
+        //list'in tum methodlarını verir --> .size() dedigimizde kac tane oldugunu verir
 
         //3)Print all ids greater than 3 on the console
         List<Integer> ids = jsonPath.getList("data.findAll{it.id>3}.id");

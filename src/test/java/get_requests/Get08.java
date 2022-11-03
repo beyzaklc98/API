@@ -17,7 +17,7 @@ public class Get08 extends JsonplaceholderBaseUrl {
     //Object Mapper: Daha popüler...
 
       /*
-         Given
+        Given
             https://jsonplaceholder.typicode.com/todos/2
         When
             I send GET Request to the URL
@@ -36,6 +36,8 @@ public class Get08 extends JsonplaceholderBaseUrl {
             }
      */
 
+    //Objet yavas, method sınırlı bu sebeple her zaman kullanmayız
+
     @Test
     public void get08(){
 
@@ -49,6 +51,7 @@ public class Get08 extends JsonplaceholderBaseUrl {
         expectedData.put("title","quis ut nam facilis et officia qui");
         expectedData.put("completed",false);
         System.out.println(expectedData);
+        //HashMap<>() sıralı degildir bize sıralı olarak dondurmez
 
         //Send The Request and Get The Response
         Response response = given().spec(spec).when().get("/{first}/{second}");

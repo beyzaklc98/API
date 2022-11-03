@@ -16,6 +16,10 @@ public class Get01b {
        And
            Status Line should be HTTP/1.1 200 OK
     */
+
+    //İlk olarak swagger dokumanından url'ye bakarak bunu nasıl kullanmam gerektigini soyleyecek
+
+    // İlk olarak test yapabilmem icin @Test anntations a ihtiyac var
     @Test
     public  void get01(){
 
@@ -27,6 +31,9 @@ public class Get01b {
         //Send The Request and Get The Response
         Response response = given().when().get(url);
         response.prettyPrint();
+        //Get yaptım "postman"de send dedim ve bana respanse olarak dondu
+        //JSon formatında dondu
+        //response.prettyPrint(); dedigimde bana String olarak dondu
 
 
         //Do Assertion

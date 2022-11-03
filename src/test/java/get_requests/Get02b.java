@@ -36,7 +36,7 @@ public class Get02b extends ReqresBaseUrl {
 
         assertEquals(404, response.statusCode());
         assertEquals("HTTP/1.1 404 Not Found", response.statusLine());
-        assertEquals("cloudflare", response.getHeader("Server"));
+        assertEquals("cloudflare", response.getHeader("Server")); //Biz server'a headers dan ulasıyoruz
         assertEquals(2, response.asString().replaceAll("\\s","").length());
 
     }
