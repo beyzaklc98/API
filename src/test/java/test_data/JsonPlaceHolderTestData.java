@@ -1,6 +1,8 @@
 package test_data;
+
 import java.util.HashMap;
 import java.util.Map;
+
 public class JsonPlaceHolderTestData {
 
     public Map<String,Object> expectedDataMethod(Integer userId, String title, Boolean completed ){
