@@ -47,10 +47,12 @@ public class Get06b extends ReqresBaseUrl {
         //list'in tum methodlarını verir --> .size() dedigimizde kac tane oldugunu verir
 
         //3)Print all ids greater than 3 on the console
-        List<Integer> ids = jsonPath.getList("data.findAll{it.id>3}.id");
+        List<Integer> ids = jsonPath.getList("data.findAll{it.id>3}.id"); // list data'nın icinde diye data.findAll dedik
         System.out.println("ids = " + ids);
-        //id'si 3'ten buyuk olanların arasından id'leri getir dedim,
+        //id'si 3'ten buyuk olanların arasından id'leri getir dedim (it--> getir)
         //id yerine icerisinden herhangi baska bir sey de yazabilirdim
+        //"data.findAll{it.id>3} ---> buraya kadar filtreleme yaptık
+        //Sonra .id" diyerek filtreledigimizin icerisinden id olanı al demis olduk
 
         //Assert that there are 3 ids greater than 3
         assertEquals(3,ids.size());
