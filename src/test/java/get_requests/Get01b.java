@@ -5,6 +5,7 @@ import org.junit.Test;
 import static io.restassured.RestAssured.given;
 public class Get01b {
     /*
+       // bunlar gerken keyvord
        Given
            https://reqres.in/api/users/3
        When
@@ -29,11 +30,12 @@ public class Get01b {
         //Set The Expected Data
 
         //Send The Request and Get The Response
-        Response response = given().when().get(url);
+        Response response = given().when().get(url); // Response dondurdu bize, json olarak dondu
         response.prettyPrint();
         //Get yaptım "postman"de send dedim ve bana respanse olarak dondu
         //JSon formatında dondu
-        //response.prettyPrint(); dedigimde bana String olarak dondu
+        //response.prettyPrint(); // dedigimde bana String olarak dondu,
+                                  // benim response'ımı yazdırmaya yarıyor
 
 
         //Do Assertion
